@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4827F3227AA8F86001A64F4 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4827F3127AA8F85001A64F4 /* Oswald-Light.ttf */; };
+		F4827F3427AA8FCC001A64F4 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4827F3327AA8FCC001A64F4 /* Ubuntu-Regular.ttf */; };
 		F486EE4127A94C600074B44B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE4027A94C600074B44B /* AppDelegate.swift */; };
 		F486EE4327A94C600074B44B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE4227A94C600074B44B /* SceneDelegate.swift */; };
-		F486EE4527A94C600074B44B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE4427A94C600074B44B /* ViewController.swift */; };
-		F486EE4827A94C600074B44B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F486EE4627A94C600074B44B /* Main.storyboard */; };
+		F486EE4527A94C600074B44B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE4427A94C600074B44B /* MainViewController.swift */; };
 		F486EE4A27A94C660074B44B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F486EE4927A94C660074B44B /* Assets.xcassets */; };
 		F486EE4D27A94C660074B44B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F486EE4B27A94C660074B44B /* LaunchScreen.storyboard */; };
+		F486EE5527A974B80074B44B /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE5427A974B80074B44B /* TopView.swift */; };
+		F4D79F2C27AB3F9E00A84DF4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D79F2A27AB3F9D00A84DF4 /* Constants.swift */; };
+		F4D79F2D27AB3F9E00A84DF4 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D79F2B27AB3F9E00A84DF4 /* Extentions.swift */; };
+		F4D79F2F27AB429900A84DF4 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D79F2E27AB429900A84DF4 /* ContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4827F3127AA8F85001A64F4 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		F4827F3327AA8FCC001A64F4 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		F486EE3D27A94C5F0074B44B /* OneScreenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneScreenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F486EE4027A94C600074B44B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F486EE4227A94C600074B44B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F486EE4427A94C600074B44B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F486EE4727A94C600074B44B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F486EE4427A94C600074B44B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F486EE4927A94C660074B44B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F486EE4C27A94C660074B44B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F486EE4E27A94C660074B44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F486EE5427A974B80074B44B /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		F4D79F2A27AB3F9D00A84DF4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = OneScreenApp/Constants.swift; sourceTree = SOURCE_ROOT; };
+		F4D79F2B27AB3F9E00A84DF4 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extentions.swift; path = OneScreenApp/Extentions.swift; sourceTree = SOURCE_ROOT; };
+		F4D79F2E27AB429900A84DF4 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4827F3927AABE71001A64F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F486EE4927A94C660074B44B /* Assets.xcassets */,
+				F486EE4B27A94C660074B44B /* LaunchScreen.storyboard */,
+				F4827F3127AA8F85001A64F4 /* Oswald-Light.ttf */,
+				F4827F3327AA8FCC001A64F4 /* Ubuntu-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4827F3C27AACA49001A64F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F486EE5427A974B80074B44B /* TopView.swift */,
+				F4D79F2E27AB429900A84DF4 /* ContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F486EE3427A94C5F0074B44B = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +86,24 @@
 		F486EE3F27A94C5F0074B44B /* OneScreenApp */ = {
 			isa = PBXGroup;
 			children = (
-				F486EE4027A94C600074B44B /* AppDelegate.swift */,
-				F486EE4227A94C600074B44B /* SceneDelegate.swift */,
-				F486EE4427A94C600074B44B /* ViewController.swift */,
-				F486EE4627A94C600074B44B /* Main.storyboard */,
-				F486EE4927A94C660074B44B /* Assets.xcassets */,
-				F486EE4B27A94C660074B44B /* LaunchScreen.storyboard */,
 				F486EE4E27A94C660074B44B /* Info.plist */,
+				F4D79F3027AB55D500A84DF4 /* AppDelegate */,
+				F486EE4427A94C600074B44B /* MainViewController.swift */,
+				F4D79F2A27AB3F9D00A84DF4 /* Constants.swift */,
+				F4D79F2B27AB3F9E00A84DF4 /* Extentions.swift */,
+				F4827F3C27AACA49001A64F4 /* Views */,
+				F4827F3927AABE71001A64F4 /* Resources */,
 			);
 			path = OneScreenApp;
+			sourceTree = "<group>";
+		};
+		F4D79F3027AB55D500A84DF4 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F486EE4027A94C600074B44B /* AppDelegate.swift */,
+				F486EE4227A94C600074B44B /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +164,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4827F3427AA8FCC001A64F4 /* Ubuntu-Regular.ttf in Resources */,
+				F4827F3227AA8F86001A64F4 /* Oswald-Light.ttf in Resources */,
 				F486EE4D27A94C660074B44B /* LaunchScreen.storyboard in Resources */,
 				F486EE4A27A94C660074B44B /* Assets.xcassets in Resources */,
-				F486EE4827A94C600074B44B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F486EE4527A94C600074B44B /* ViewController.swift in Sources */,
+				F4D79F2D27AB3F9E00A84DF4 /* Extentions.swift in Sources */,
+				F486EE4527A94C600074B44B /* MainViewController.swift in Sources */,
 				F486EE4127A94C600074B44B /* AppDelegate.swift in Sources */,
+				F486EE5527A974B80074B44B /* TopView.swift in Sources */,
+				F4D79F2C27AB3F9E00A84DF4 /* Constants.swift in Sources */,
+				F4D79F2F27AB429900A84DF4 /* ContainerView.swift in Sources */,
 				F486EE4327A94C600074B44B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F486EE4627A94C600074B44B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F486EE4727A94C600074B44B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F486EE4B27A94C660074B44B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +330,7 @@
 				INFOPLIST_FILE = OneScreenApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +358,7 @@
 				INFOPLIST_FILE = OneScreenApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
