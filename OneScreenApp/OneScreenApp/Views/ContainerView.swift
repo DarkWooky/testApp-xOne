@@ -18,33 +18,95 @@ class ContainerView: UIView {
         return view
     }()
 
+    let textField: UITextField = {
+        let textField = UITextField()
+        textField.returnKeyType = .done
+        textField.font = Constants.Font.placeholder
+        textField.textColor = Constants.Color.text
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "Haзвание локации",
+            attributes: [NSAttributedString.Key.foregroundColor: Constants.Color.placeholder]
+        )
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineHeightMultiple = 1.08
+        textField.attributedText = NSMutableAttributedString(
+            string: "",
+            attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle]
+        )
+        return textField
+    }()
+
+    let plusButton: UIButton = {
+        let button = UIButton()
+        let image = UIImage(systemName: "plus.circle.fill",
+                            withConfiguration: UIImage.SymbolConfiguration(pointSize: 25,
+                                                                           weight: .regular,
+                                                                           scale: UIImage.SymbolScale(rawValue: 1)!))
+        button.setImage(image, for: .normal)
+        button.tintColor = .black
+        return button
+    }()
+
+    let collectionView = CollectionView()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(backView)
         setupView()
-
+        setupCollection()
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.backView.addInnerShadow(Constants.Color.innerShadow, Constants.ShadowOffset.inner, Constants.ShadowRadius.inner, opacity: 0.07)
+        self.backView.addInnerShadow(Constants.Color.innerShadow,
+                                     Constants.ShadowOffset.inner,
+                                     Constants.ShadowRadius.inner,
+                                     opacity: 0.07)
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
+    private func setupCollection() {
+        collectionView.reloadData()
+        collectionView.layoutIfNeeded()
+    }
+
     private func setupView() {
         backgroundColor = Constants.Color.container
         translatesAutoresizingMaskIntoConstraints = false
         setupCornerRadius(Constants.Radius.container)
-        setupShadow(Constants.Color.containerShadow, Constants.ShadowOffset.container, Constants.ShadowRadius.container, opacity: 1)
+        setupShadow(Constants.Color.containerShadow,
+                    Constants.ShadowOffset.container,
+                    Constants.ShadowRadius.container,
+                    opacity: 1)
 
+        addSubview(backView)
         NSLayoutConstraint.activate([
             backView.topAnchor.constraint(equalTo: topAnchor, constant: Constants.Layout.topIndent),
             backView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Constants.Layout.sideIndent),
             backView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Constants.Layout.sideIndent),
             backView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Constants.Layout.bottomIndent)
+        ])
+
+        let hStackView = UIStackView(arrangedSubviews: [textField, plusButton])
+        hStackView.axis = .horizontal
+        hStackView.spacing = 15
+        hStackView.translatesAutoresizingMaskIntoConstraints = false
+        backView.addSubview(hStackView)
+
+        NSLayoutConstraint.activate([
+            hStackView.topAnchor.constraint(equalTo: backView.topAnchor, constant: 10),
+            hStackView.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: 10),
+            hStackView.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: -10)
+        ])
+
+        backView.addSubview(collectionView)
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: hStackView.bottomAnchor, constant: 10 ),
+            collectionView.leadingAnchor.constraint(equalTo: backView.leadingAnchor, constant: 10),
+            collectionView.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: -10),
+            collectionView.bottomAnchor.constraint(equalTo: backView.bottomAnchor)
         ])
     }
 

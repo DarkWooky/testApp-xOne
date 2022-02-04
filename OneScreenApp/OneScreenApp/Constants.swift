@@ -9,10 +9,13 @@ import Foundation
 import UIKit
 
 struct Constants {
+
     struct Color {
         static let title = UIColor().colorFromHexString("212020") // Основной текст
         static let background = UIColor().colorFromHexString("FAFAFA") // Светлый серый для фона
         static let inner = UIColor().colorFromHexString("EDF3F4") // Цвет внутренней заливки
+        static let text = UIColor().colorFromHexString("869495")
+        static let placeholder = UIColor().colorFromHexString("869495")
         static let container = UIColor(.white) // Цвет контейнера
 
         static let containerShadow = UIColor().colorFromHexString("616A6A").withAlphaComponent(0.17) // Тень контейнера
@@ -20,6 +23,7 @@ struct Constants {
     }
     struct Font {
         static let title = UIFont(name: "Oswald-Light", size: 25)
+        static let placeholder = UIFont(name: "Ubuntu-Regular", size: 19)
     }
     struct Radius {
         static let container: CGFloat = 16.5
@@ -38,5 +42,14 @@ struct Constants {
         static let topIndent: CGFloat = 16
         static let sideIndent: CGFloat = 15
         static let bottomIndent: CGFloat = 16.5
+        static let cellIndent: CGFloat = 10
     }
+
+    struct CollectionViewLayout {
+        static let spacing: CGFloat = 10
+        static let numberOfColumns: CGFloat = 3
+        static let bottomInset: CGFloat = 17
+    }
+
+
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F4827F3227AA8F86001A64F4 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4827F3127AA8F85001A64F4 /* Oswald-Light.ttf */; };
 		F4827F3427AA8FCC001A64F4 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4827F3327AA8FCC001A64F4 /* Ubuntu-Regular.ttf */; };
+		F484B0D327AD874100901548 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F484B0D227AD874100901548 /* CollectionView.swift */; };
+		F484B0D527AD991800901548 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F484B0D427AD991800901548 /* PhotoCell.swift */; };
 		F486EE4127A94C600074B44B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE4027A94C600074B44B /* AppDelegate.swift */; };
 		F486EE4327A94C600074B44B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE4227A94C600074B44B /* SceneDelegate.swift */; };
 		F486EE4527A94C600074B44B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE4427A94C600074B44B /* MainViewController.swift */; };
@@ -16,13 +18,17 @@
 		F486EE4D27A94C660074B44B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F486EE4B27A94C660074B44B /* LaunchScreen.storyboard */; };
 		F486EE5527A974B80074B44B /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F486EE5427A974B80074B44B /* TopView.swift */; };
 		F4D79F2C27AB3F9E00A84DF4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D79F2A27AB3F9D00A84DF4 /* Constants.swift */; };
-		F4D79F2D27AB3F9E00A84DF4 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D79F2B27AB3F9E00A84DF4 /* Extentions.swift */; };
+		F4D79F2D27AB3F9E00A84DF4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D79F2B27AB3F9E00A84DF4 /* Extensions.swift */; };
 		F4D79F2F27AB429900A84DF4 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D79F2E27AB429900A84DF4 /* ContainerView.swift */; };
+		F4DC4D7727ABCD7E000BD3AA /* UIViewController + Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC4D7527ABCD7E000BD3AA /* UIViewController + Preview.swift */; };
+		F4DC4D7827ABCD7E000BD3AA /* UIView + Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC4D7627ABCD7E000BD3AA /* UIView + Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4827F3127AA8F85001A64F4 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
 		F4827F3327AA8FCC001A64F4 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		F484B0D227AD874100901548 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionView.swift; path = ../../../../../CollectionView.swift; sourceTree = "<group>"; };
+		F484B0D427AD991800901548 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = ../../../../../PhotoCell.swift; sourceTree = "<group>"; };
 		F486EE3D27A94C5F0074B44B /* OneScreenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneScreenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F486EE4027A94C600074B44B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F486EE4227A94C600074B44B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +38,10 @@
 		F486EE4E27A94C660074B44B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F486EE5427A974B80074B44B /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		F4D79F2A27AB3F9D00A84DF4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = OneScreenApp/Constants.swift; sourceTree = SOURCE_ROOT; };
-		F4D79F2B27AB3F9E00A84DF4 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extentions.swift; path = OneScreenApp/Extentions.swift; sourceTree = SOURCE_ROOT; };
+		F4D79F2B27AB3F9E00A84DF4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = OneScreenApp/Extensions.swift; sourceTree = SOURCE_ROOT; };
 		F4D79F2E27AB429900A84DF4 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		F4DC4D7527ABCD7E000BD3AA /* UIViewController + Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Preview.swift"; sourceTree = "<group>"; };
+		F4DC4D7627ABCD7E000BD3AA /* UIView + Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Preview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,8 @@
 			children = (
 				F486EE5427A974B80074B44B /* TopView.swift */,
 				F4D79F2E27AB429900A84DF4 /* ContainerView.swift */,
+				F484B0D227AD874100901548 /* CollectionView.swift */,
+				F484B0D427AD991800901548 /* PhotoCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,10 +98,12 @@
 			children = (
 				F486EE4E27A94C660074B44B /* Info.plist */,
 				F4D79F3027AB55D500A84DF4 /* AppDelegate */,
+				F4827F3C27AACA49001A64F4 /* Views */,
 				F486EE4427A94C600074B44B /* MainViewController.swift */,
 				F4D79F2A27AB3F9D00A84DF4 /* Constants.swift */,
-				F4D79F2B27AB3F9E00A84DF4 /* Extentions.swift */,
-				F4827F3C27AACA49001A64F4 /* Views */,
+				F4D79F2B27AB3F9E00A84DF4 /* Extensions.swift */,
+				F4DC4D7627ABCD7E000BD3AA /* UIView + Preview.swift */,
+				F4DC4D7527ABCD7E000BD3AA /* UIViewController + Preview.swift */,
 				F4827F3927AABE71001A64F4 /* Resources */,
 			);
 			path = OneScreenApp;
@@ -178,12 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4D79F2D27AB3F9E00A84DF4 /* Extentions.swift in Sources */,
+				F4D79F2D27AB3F9E00A84DF4 /* Extensions.swift in Sources */,
 				F486EE4527A94C600074B44B /* MainViewController.swift in Sources */,
+				F4DC4D7727ABCD7E000BD3AA /* UIViewController + Preview.swift in Sources */,
 				F486EE4127A94C600074B44B /* AppDelegate.swift in Sources */,
 				F486EE5527A974B80074B44B /* TopView.swift in Sources */,
+				F4DC4D7827ABCD7E000BD3AA /* UIView + Preview.swift in Sources */,
+				F484B0D327AD874100901548 /* CollectionView.swift in Sources */,
 				F4D79F2C27AB3F9E00A84DF4 /* Constants.swift in Sources */,
 				F4D79F2F27AB429900A84DF4 /* ContainerView.swift in Sources */,
+				F484B0D527AD991800901548 /* PhotoCell.swift in Sources */,
 				F486EE4327A94C600074B44B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
