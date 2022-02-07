@@ -24,26 +24,19 @@ class ContainerView: UIView {
         textField.font = Constants.Font.placeholder
         textField.textColor = Constants.Color.text
         textField.attributedPlaceholder = NSAttributedString(
-            string: "Haзвание локации",
+            string: Constants.Text.textFieldPlaceholder,
             attributes: [NSAttributedString.Key.foregroundColor: Constants.Color.placeholder]
-        )
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineHeightMultiple = 1.08
-        textField.attributedText = NSMutableAttributedString(
-            string: "",
-            attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle]
         )
         return textField
     }()
 
     let plusButton: UIButton = {
         let button = UIButton()
-        let image = UIImage(systemName: "plus.circle.fill",
-                            withConfiguration: UIImage.SymbolConfiguration(pointSize: 25,
-                                                                           weight: .regular,
-                                                                           scale: UIImage.SymbolScale(rawValue: 1)!))
+        let image = UIImage(systemName: Constants.SFSymbols.plus,
+                            withConfiguration: UIImage.SymbolConfiguration(pointSize: Constants.SFSymbols.pointSize))
         button.setImage(image, for: .normal)
         button.tintColor = .black
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 
@@ -52,7 +45,6 @@ class ContainerView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
-        setupCollection()
     }
 
     override func layoutSubviews() {
@@ -65,11 +57,6 @@ class ContainerView: UIView {
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    private func setupCollection() {
-        collectionView.reloadData()
-        collectionView.layoutIfNeeded()
     }
 
     private func setupView() {
@@ -91,9 +78,14 @@ class ContainerView: UIView {
 
         let hStackView = UIStackView(arrangedSubviews: [textField, plusButton])
         hStackView.axis = .horizontal
-        hStackView.spacing = 15
+        hStackView.spacing = 10
         hStackView.translatesAutoresizingMaskIntoConstraints = false
         backView.addSubview(hStackView)
+
+        NSLayoutConstraint.activate([
+            plusButton.heightAnchor.constraint(equalToConstant: 25),
+            plusButton.widthAnchor.constraint(equalToConstant: 25)
+        ])
 
         NSLayoutConstraint.activate([
             hStackView.topAnchor.constraint(equalTo: backView.topAnchor, constant: 10),

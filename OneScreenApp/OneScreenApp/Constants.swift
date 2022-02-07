@@ -10,6 +10,16 @@ import UIKit
 
 struct Constants {
 
+    struct Text {
+        static let title = "ЛОКАЦИИ"
+        static let textFieldPlaceholder = "Название локации"
+    }
+
+    struct SFSymbols {
+        static let plus = "plus.circle.fill"
+        static let pointSize: CGFloat = 25
+    }
+
     struct Color {
         static let title = UIColor().colorFromHexString("212020") // Основной текст
         static let background = UIColor().colorFromHexString("FAFAFA") // Светлый серый для фона
@@ -48,7 +58,7 @@ struct Constants {
     struct CollectionViewLayout {
         static let spacing: CGFloat = 10
         static let numberOfColumns: CGFloat = 3
-        static let bottomInset: CGFloat = 17
+        static let bottomInset: CGFloat = 10
     }
 
 
